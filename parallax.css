@@ -1,0 +1,106 @@
+.space-div {
+	height: 700px;
+	width: 100%;
+	color: red;
+	text-align: center;
+}
+.parallax { 
+    /* The image used */
+    background-image: url("https://s.abcnews.com/images/Lifestyle/puppy-ht-3-er-170907_4x3_992.jpg");
+    
+    /* Set a specific height */
+    height: 350px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.vertical-center {
+	vertical-align: center;
+	padding: 100px;
+}
+
+/* NOT MINE */
+body {
+  margin: 0;
+  font-family: helvetica;
+}
+
+h1,
+h2,
+p {
+  padding-top: 0px;
+  color: white;
+  text-align: center;
+}
+
+.mb_parallax_container {
+  height: 400px;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mb_parallax_overlay {
+  height:100%;
+  width: 100%;
+  margin: auto;
+  background-color:#000000;
+  opacity: .8;
+}
+
+#mb_parallax_one {
+  background-image: url(https://s.abcnews.com/images/Lifestyle/puppy-ht-3-er-170907_4x3_992.jpg);
+}
+
+/* GENERAL BUTTON STYLING */
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button {
+  background: none;
+  border: 3px solid #fff;
+  border-radius: 0px;
+  color: #fff;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 10px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+button::before,
+button::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #000;
+}
+
+/* BUTTON 2 */
+.btn-2::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+
+.btn-2:hover:after {
+  width: 100%;
+}
